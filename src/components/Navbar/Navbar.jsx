@@ -1,13 +1,15 @@
 import { AlignJustify, X } from "lucide-react";
 import logo from "../../assets/assignment-images/imges/nav/logo.png";
 import {useState } from "react";
+import { Link } from "react-router-dom";
 // import Style from "./Navbar.module.css";
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav id="navBar" className={`fixed top-0 bg-gray-900 lg:bg-transparent left-0 right-0 z-40 flex justify-between items-center px-10 py-5 text-lg ${isOpen && 'flex-col gap-y-5 text-white relative'}`}>
+        <nav id="navBar" className={`fixed lg:relative top-0 bg-gray-900 lg:bg-transparent left-0 right-0 z-50 flex justify-between items-center px-10 py-5 text-lg ${isOpen && 'flex-col gap-y-5 text-white'}`}>
             <span><img src={logo} className="w-full" alt="rentcars"/></span>
             <ul className={` lg:flex justify-evenly text-center gap-7 text-gray-500 ${isOpen ? "flex-col" : "hidden" }`}>
+                <Link to={'/'} className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Home</Link>
                 <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Become a rintal</li>
                 <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Rinatal deals</li>
                 <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>How it work</li>

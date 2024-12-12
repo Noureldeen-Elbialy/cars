@@ -1,0 +1,21 @@
+.paginationContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap:1rem;
+}
+.pageNum{
+    color: gray;
+    padding: 5px 10px;
+    transition: all 0.2s;
+}
+.pageNum:hover{
+    background-color: #2563eb;
+    color: white;
+}
+.active{
+    color: white;
+    background-color: #2563eb;
+}
