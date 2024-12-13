@@ -3,7 +3,7 @@ import Title from "../Title"
 
 const HowItWork = () => {
     return (
-        <section id='howItWork' className="my-10">
+        <section id='howItWork' className="py-10">
             <Title className={'text-center'} title={"how it work"} desc={'Rent with following 3 working steps'} />
             <div className="items grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-3 w-[90%] m-auto mt-20">
                 <div className="item text-center">
