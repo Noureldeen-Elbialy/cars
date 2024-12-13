@@ -1,4 +1,5 @@
 import { ArrowRight, CalendarDays, GitFork, Snowflake, Star, UserRound } from 'lucide-react';
+import { Link } from 'react-router-dom';
 const CarCard = ({ carInfo ,image}) => {
     const { id, car, price, car_model_year } = carInfo;
     return (
@@ -37,7 +38,7 @@ const CarCard = ({ carInfo ,image}) => {
                     </div>
                 </div>
                 <div className="details-btn">
-                    <button className="flex gap-2 items-center justify-center text-lg w-full py-2 rounded-lg bg-blue-600 text-white">View Details <ArrowRight size={16} /></button>
+                    <Link onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} to={`/cardetails/${id}/${car}`} className="flex gap-2 items-center justify-center text-lg w-full py-2 rounded-lg bg-blue-600 text-white">View Details <ArrowRight size={16} /></Link>
                 </div>
             </div>
         </div>

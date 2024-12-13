@@ -12,10 +12,12 @@
     transition: all 0.2s;
 }
 .pageNum:hover{
-    background-color: #2563eb;
-    color: white;
+    color:black;
 }
 .active{
     color: white;
     background-color: #2563eb;
+}
+.active:hover{
+    color: white;
 }

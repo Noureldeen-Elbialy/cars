@@ -10,7 +10,7 @@ const Navbar = () => {
             <span><img src={logo} className="w-full" alt="rentcars"/></span>
             <ul className={` lg:flex justify-evenly text-center gap-7 text-gray-500 ${isOpen ? "flex-col" : "hidden" }`}>
                 <Link to={'/'} className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Home</Link>
-                <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Become a rintal</li>
+                <Link to={'/cars'} className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>All Cars</Link>
                 <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Rinatal deals</li>
                 <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>How it work</li>
                 <li className={`lg:hover:text-black duration-300 cursor-pointer ${isOpen && "hover:text-white my-2" }`}>Why choose us</li>

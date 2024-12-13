@@ -18,7 +18,7 @@ const WhyUs = () => {
     return (
         <section id="whyUs" className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 py-10 items-center overflow-hidden">
             <div className="item relative h-full flex items-center">
-                <img src={car} className="w-[80%]" alt="audi car" />
+                <img data-aos="fade-right" data-aos-duration="1000" src={car} className="w-[80%]" alt="audi car" />
                 <img src={vector} className="absolute -z-20 h-full top-0" alt="vector" />
             </div>
             <div className="item px-5 lg:p-0">
